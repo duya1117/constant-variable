@@ -1,12 +1,13 @@
-
 public class Main {
     public static void main(String[] args) {
-        int a = 10;
-        int b = 3;
+        int number = 0;
 
-        System.out.println(a++);
-
-        System.out.println(b--);
-
+        if(number > 0){
+            System.out.println("number은 양수입니다.");
+        } else if (number < 0){
+            System.out.println("number은 음수입니다.");
+        } else{
+            System.out.println("number은 0입니다.");
         }
     }
+}
