@@ -1,24 +1,25 @@
 public class Main {
     public static void main(String[] args) {
-//        "happy", :angry", "sad", etc.
-        String mood = "";
+        int age = 20;
+        boolean hasID = true;
 
-        switch (mood) {
-            case "happy":
-                System.out.println("나는 행복하다. 왜냐하면 행복하기 때문이다.");
-                break;
-            case "tired":
-                System.out.println("피곤하다 너무 자고싶다.");
-                break;
-            case "sad":
-                System.out.println("수업중이라 잘 수가 없어 슬프다.");
-                break;
-            case "angry":
-                System.out.println("지금 잘 수가 없어 화가난다.");
-                break;
+        if(age >= 18 && hasID) {
+            System.out.println("접속 가능");
+        }
 
-            default:
-                System.out.println("지금 내 기분은 이 단어들로는 표현할 수 없다.");
+        boolean isWeekend = false;
+        boolean isHoliday = true;
+
+        if (isWeekend || isHoliday) {
+            System.out.println("쉴수있습니다.");
+        }
+
+        boolean isRaining = true;
+        
+        if(!isRaining) {
+            System.out.println("그냥 나가.");
+        } else {
+            System.out.println("우산 챙겨.");
         }
     }
 }
